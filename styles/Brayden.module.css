@@ -1,0 +1,31 @@
+.shape {
+    height: 18rem;
+    width: 18rem;
+    border-style: solid;
+    margin: 1rem;
+    padding: 1rem;
+}
+
+.animate {
+    height: 18rem;
+    width: 18rem;
+    border-style: solid;
+    margin: 1rem;
+    padding: 1rem;
+}
+
+.shadows {
+    height: 18rem;
+    width: 18rem;
+    border-style: solid;
+    margin: 1rem;
+    padding: 1rem;
+}
+
+.textdecorated {
+    height: 18rem;
+    width: 18rem;
+    border-style: solid;
+    margin: 1rem;
+    padding: 1rem;
+}

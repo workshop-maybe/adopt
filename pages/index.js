@@ -24,6 +24,7 @@ export default function Home() {
       <Link href='/styleplayground/quasar'>Quasar</Link>
       <Link href='/styleplayground/a'>A</Link>
       <Link href='/styleplayground/kyle'>Kyle</Link>
+      <Link href='/styleplayground/colin'>Colin</Link>
       <Link href='/styleplayground/james'>James</Link>
 
 
