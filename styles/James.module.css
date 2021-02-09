@@ -1,9 +1,10 @@
 .shape {
-    height: 18rem;
-    width: 18rem;
+    height: 3rem;
+    width: 40rem;
     border-style: solid;
     margin: 1rem;
     padding: 1rem;
+    background-color: aqua;
 }
 
 .animate {
@@ -20,6 +21,7 @@
     border-style: solid;
     margin: 1rem;
     padding: 1rem;
+    background-color: burlywood;
 }
 
 .textdecorated {
