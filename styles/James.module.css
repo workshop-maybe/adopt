@@ -1,31 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+a.jameslinks{
+    color: pink;
+}
+
 .shape {
-    height: 18rem;
     width: 18rem;
-    border-style: solid;
+    height: 18rem;
+    background-color: purple;
     margin: 1rem;
-    padding: 1rem;
+    padding-left: 10%;
+    padding-top: 30%;
+    clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
+    color: white;
+    font-weight: 700;
 }
 
-.animate {
-    height: 18rem;
-    width: 18rem;
-    border-style: solid;
-    margin: 1rem;
-    padding: 1rem;
+@keyframes slidein {
+    0% {
+      transform: translateX(0%);
+    }
+  
+    50% {
+      transform: translateX(100%);
+    }
+
+    100% {
+        transform: translateX(0%);
+    }
 }
 
-.shadows {
-    height: 18rem;
-    width: 18rem;
-    border-style: solid;
-    margin: 1rem;
-    padding: 1rem;
+@-webkit-keyframes slidein {
+    0% {
+      transform: translateX(0%);
+    }
+  
+    50% {
+      transform: translateX(100%);
+    }
+
+    100% {
+        transform: translateX(0%);
+    }
 }
 
-.textdecorated {
-    height: 18rem;
+.movement {
     width: 18rem;
-    border-style: solid;
+    height: 18rem;
     margin: 1rem;
-    padding: 1rem;
+    padding: 2rem;
+    border-style: solid;
+    animation: slidein 3s infinite;
+}
+
+.shadow {
+    width: 18rem;
+    height: 18rem;
+    margin: 1rem;
+    padding: 2rem;
+    border-style: solid;
+    box-shadow: 50px 50px 10px powderblue;
+}
+
+.text {
+    width: 18rem;
+    height: 18rem;
+    margin: 1rem;
+    padding: 2rem;
+    font-size: 2rem;
+    color: white;
+    border-style: solid;
+    background: rgb(2,0,36);
+    background: linear-gradient(18deg, rgba(2,0,36,1) 0%, rgba(83,83,193,0.43881302521008403) 60%, rgba(0,212,255,1) 100%);
+    font-family: 'Press Start 2P', cursive;
 }
