@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Ballet&display=swap');
+
+.shape {
+    border-color: gold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    vertical-align: middle;
+    height: 18rem;
+    width: 18rem;
+    border-style: double;
+    border-radius: 50%;
+    border-width: 13px;
+    margin: 1rem;
+    padding: 1rem;
+}
+.shape:hover {
+    border-radius: 0%;
+    border-style: ridge;
+}
+  
+@keyframes animatedBox {
+  0%   {background-color:slateblue; left:0px; top:0px;}
+  25%  {background-color:pink; left:333px; top:0px;}
+  50%  {background-color:teal; left:333px; top:333px;}
+  75%  {background-color:cyan; left:333px; top:0px;}
+  100% {background-color:slateblue; left:0px; top:0px;}
+}
+
+.animate {
+    border-color: gold;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    vertical-align: middle;
+    background-color: rgba(128, 0, 128, 0.333);
+    position: relative;
+    height: 18rem;
+    width: 18rem;
+    border-style: none;
+    margin: 1rem;
+    padding: 1rem;
+    animation: animatedBox 5s linear 2s infinite;
+}
+
+.shadows {
+    border-color: gold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    vertical-align: middle;
+    height: 18rem;
+    width: 18rem;
+    border-style: solid;
+    margin: 1rem;
+    padding: 1rem;
+    border-style: ridge;
+    border-width: .3em;
+    box-shadow: .3em .3em .9em .3em gold;
+    text-shadow: 13px 23px 1.2px #e71f1f;
+}
+
+.shadows:hover {
+    background-color: black;
+    color: white;
+    text-shadow: 4px 3px 0px #e71f1f, 9px 8px 0px rgb(23, 14, 146);}
+
+.textdecorated {
+    background-color: rgba(155, 75, 0, 0.561);
+    font-family: Ballet;
+    font-size: 45px;
+    border-color: gold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    vertical-align: middle;
+    height: 18rem;
+    width: 18rem;
+    border-style: solid;
+    margin: 1rem;
+    padding: 1rem;
+    text-decoration: underline overline double gold;}
