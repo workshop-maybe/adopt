@@ -2,12 +2,18 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 ## Getting Started
 
-First, run the development server:
+First, clone the repository and change to that directory:
 
 ```bash
-npm run dev
+git clone https://github.com/workshop-maybe/adopt.git && cd adopt
+```
+
+Next, run the development server:
+
+```bash
+npm install && npm run dev
 # or
-yarn dev
+yarn && yarn dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
