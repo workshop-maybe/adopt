@@ -1,8 +1,21 @@
 import Head from 'next/head'
 import Link from 'next/link'
 import styles from '../styles/Home.module.css'
+import { getStylePlaygroundPages } from '../lib/stylePlaygroundList'
 
-export default function Home() {
+export async function getStaticProps() {
+  const getStyleExamples = getStylePlaygroundPages()
+  return {
+    props: {
+      getStyleExamples
+    }
+  }
+}
+
+export default function Home({ getStyleExamples }) {
+
+  console.log(getStyleExamples)
+
   return (
     <div className={styles.container}>
       <Head>
@@ -13,7 +26,7 @@ export default function Home() {
       <h1>Hello Adopt</h1>
       <Link href='/about'>About Page</Link>
 
-      <h2>Style Playground</h2>
+      <h2>Style Playground (long way)</h2>
       <Link href='/styleplayground/field'>Field</Link>
       <Link href='/styleplayground/ryan'>Ryan</Link>
       <Link href='/styleplayground/brayden'>Brayden</Link>
@@ -27,7 +40,14 @@ export default function Home() {
       <Link href='/styleplayground/colin'>Colin</Link>
       <Link href='/styleplayground/james'>James</Link>
 
-
+      <h2>Style Playground (short way)</h2>
+      <ul>
+        {getStyleExamples.map((somethinglala) => (
+          
+            <li>{somethinglala}</li>
+          
+        ))}
+      </ul>
     </div>
   )
 }
